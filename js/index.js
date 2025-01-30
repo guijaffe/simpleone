@@ -1,7 +1,7 @@
 const toggleSidebar = () => {
 	const sidebar = document.querySelector(".sidebar__controls");
 	const headerButton = document.querySelector(".sidebar__header-button");
-	const searchFormButton = document.querySelector(".sidebar__controls-search");
+	const searchFormButton = document.querySelector(".sidebar__controls-search-svg");
 	const buttons = document.querySelectorAll(".sidebar__toggle-button, .sidebar__header-button");
 
 	let disableClose = true;

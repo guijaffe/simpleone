@@ -311,7 +311,7 @@ input::placeholder {
   width: 100%;
   background-color: #FFFFFF;
 }
-.sidebar__controls-search.action svg {
+.sidebar__controls-search-svg.action {
   fill: #005999;
   border: 1px solid #005999;
 }

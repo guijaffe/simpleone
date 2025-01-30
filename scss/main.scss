@@ -258,7 +258,7 @@ input {
       width: 100%;
       background-color: $primary-color;
 
-      &.action svg {
+      &-svg.action {
         fill: $icon-blue;
         border: 1px solid $icon-blue;
       }
