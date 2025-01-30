@@ -62,6 +62,112 @@ input {
   }
 }
 
+.header__search {
+  position: relative;
+}
+
+.header__search-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__search-input {
+  padding-right: 40px;
+}
+
+.header__search-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__search-icon {
+  @include mini-icon-styles()
+}
+
+
+.multi-input-container {
+  display: flex;
+  gap: $gap-sm;
+
+  & input {
+    width: 100%;
+  }
+}
+.multi-input-container {
+  display: flex;
+  align-items: center;
+  gap: $gap-sm;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid $border-color-light;
+  border-radius: 4px;
+  padding: $gap-sm;
+  flex-wrap: wrap;
+  gap: $gap-sm;
+  width: 100%;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #99d5ff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: #e5f4ff;
+}
+
+.tag button {
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.tag button:hover {
+  color: #333;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  min-width: 100px;
+  height: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 5px;
+}
+
+.search-button,
+.add-button {
+  @include icon-styles($size: $icon-size-small, $padding: $padding-xxs, $border: 1px solid $border-color-light, $border-radius: 4px);
+}
+
+.search-button,
+.add-button {
+  @include icon-styles($size: $icon-size-small, $padding: $padding-xxs, $border: 1px solid $border-color-light, $border-radius: 4px);
+}
+
 .header {
   @include border-styles($border-color-light, 1px, bottom);
   position: fixed;
@@ -438,7 +544,6 @@ input {
 
     &__sidebar-button {
       @include icon-styles($size: $icon-size-medium, $padding: $padding-xxs, $border: 1px solid $border-color-light, $border-radius: 4px);
-
     }
 
     &__profile-name {

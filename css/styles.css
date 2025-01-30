@@ -58,6 +58,140 @@ input::placeholder {
   background: #FCFCFD;
 }
 
+.header__search {
+  position: relative;
+}
+
+.header__search-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__search-input {
+  padding-right: 40px;
+}
+
+.header__search-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__search-icon {
+  width: 16px;
+  height: 16px;
+  fill: #abb1ba;
+  flex-shrink: 0;
+}
+
+.multi-input-container {
+  display: flex;
+  gap: 4px;
+}
+.multi-input-container input {
+  width: 100%;
+}
+
+.multi-input-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  padding: 4px;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #99d5ff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: #e5f4ff;
+}
+
+.tag button {
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.tag button:hover {
+  color: #333;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  min-width: 100px;
+  height: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 5px;
+}
+
+.search-button,
+.add-button {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, fill 0.3s ease;
+}
+.search-button:hover,
+.add-button:hover {
+  border-color: #005999;
+  fill: #005999;
+}
+
+.search-button,
+.add-button {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, fill 0.3s ease;
+}
+.search-button:hover,
+.add-button:hover {
+  border-color: #005999;
+  fill: #005999;
+}
+
 .header {
   border-bottom: 1px solid #d5d8dd;
   position: fixed;

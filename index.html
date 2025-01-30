@@ -24,8 +24,14 @@
 				<div class="header__search">
 					<label class="header__search-label">
 						<input class="header__search-input" type="search" placeholder="Поиск" aria-label="Поиск">
+						<button class="header__search-btn" type="submit" aria-label="Поиск">
+							<svg class="header__search-icon">
+								<use xlink:href="img/icons/icons.svg#search"></use>
+							</svg>
+						</button>
 					</label>
 				</div>
+
 
 				<div class="header__controls">
 					<div class="header__profile">
@@ -111,12 +117,48 @@
 					</div>
 					<div class="main__content-item main__content-item_responsible">
 						<label for="responsible" class="main__content-label main__content-label_responsible">Ответственный</label>
-						<input type="text" id="responsible" class="main__content-input main__content-input_responsible">
+						<div class="multi-input-container">
+							<div class="input-container">
+								<div id="responsibleTags" class="tags-container"></div>
+								<input type="text" id="responsible" class="main__content-input main__content-input_responsible" placeholder="Введите значение">
+							</div>
+							<div class="buttons-container">
+								<button id="addResponsibleButton" class="add-button">
+									<svg>
+										<use href="img/icons/icons.svg#plus"></use>
+									</svg>
+								</button>
+								<button class="search-button">
+									<svg>
+										<use href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
 					</div>
+
 					<div class="main__content-item main__content-item_group">
 						<label for="group" class="main__content-label main__content-label_group">Группа</label>
-						<input type="text" id="group" class="main__content-input main__content-input_group">
+						<div class="multi-input-container">
+							<div class="input-container">
+								<div id="groupTags" class="tags-container"></div>
+								<input type="text" id="group" class="main__content-input main__content-input_group" placeholder="Введите значение">
+							</div>
+							<div class="buttons-container">
+								<button id="addGroupButton" class="add-button">
+									<svg>
+										<use href="img/icons/icons.svg#plus"></use>
+									</svg>
+								</button>
+								<button class="search-button">
+									<svg>
+										<use href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
 					</div>
+
 					<div class="main__content-item main__content-item_comments">
 						<label for="comments" class="main__content-label main__content-label_comments">Комментарии</label>
 						<input type="text" id="comments" class="main__content-input main__content-input_comments">

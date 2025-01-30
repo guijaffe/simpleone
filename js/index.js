@@ -89,7 +89,6 @@ const menuSidebar = () => {
 			li.appendChild(a);
 			menuList.appendChild(li);
 		});
-
 		addArrows();
 	}
 
@@ -187,10 +186,60 @@ const toggleModal = () => {
 	});
 };
 
+const multiInput = () => {
+	function setupMultiInput(inputId, tagsContainerId, addButtonId) {
+		const inputField = document.getElementById(inputId);
+		const tagsContainer = document.getElementById(tagsContainerId);
+		const addButton = document.getElementById(addButtonId);
 
+		function addValue() {
+			const value = inputField.value.trim();
+			if (value === '') return;
+
+			const isDuplicate = Array.from(tagsContainer.children).some(
+				(tag) => tag.querySelector('span').textContent === value
+			);
+
+			if (isDuplicate) {
+				alert('Такое значение уже добавлено!');
+				return;
+			}
+
+			const tag = document.createElement('div');
+			tag.className = 'tag';
+
+			const tagText = document.createElement('span');
+			tagText.textContent = value;
+			tag.appendChild(tagText);
+
+			const deleteButton = document.createElement('button');
+			deleteButton.textContent = '×';
+			deleteButton.addEventListener('click', () => {
+				tag.remove();
+			});
+			tag.appendChild(deleteButton);
+
+			tagsContainer.appendChild(tag);
+
+			inputField.value = '';
+		}
+
+		addButton.addEventListener('click', addValue);
+
+		inputField.addEventListener('keypress', (e) => {
+			if (e.key === 'Enter') {
+				addValue();
+			}
+		});
+	}
+
+	setupMultiInput('responsible', 'responsibleTags', 'addResponsibleButton');
+	setupMultiInput('group', 'groupTags', 'addGroupButton');
+}
 
 toggleSidebar();
 menuSidebar();
 controlsBody();
 favoritesButton();
 toggleModal();
+multiInput();
