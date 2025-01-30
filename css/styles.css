@@ -410,6 +410,9 @@ input::placeholder {
   gap: 8px;
   padding: 12px 8px;
 }
+.modal__controls__button--exit-svg svg {
+  display: none;
+}
 .modal__controls__task-label {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -484,7 +487,7 @@ input::placeholder {
   .modal__controls__button {
     display: none;
   }
-  .modal__controls__button--exit-svg {
+  .modal__controls__button--exit-svg svg {
     display: flex;
     width: 32px;
     height: 32px;
@@ -495,7 +498,7 @@ input::placeholder {
     cursor: pointer;
     transition: border-color 0.3s ease, fill 0.3s ease;
   }
-  .modal__controls__button--exit-svg:hover {
+  .modal__controls__button--exit-svg svg:hover {
     border-color: #005999;
     fill: #005999;
   }

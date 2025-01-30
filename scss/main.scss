@@ -377,6 +377,10 @@ input {
     @include flex-center($direction: row, $gap: $gap-md, $justify: space-between);
     padding: $padding-md $padding-xs;
 
+    &__button--exit-svg svg {
+      display: none;
+    }
+
     &__task-label {
       font-family: $second-family;
       font-size: 20px;
@@ -466,7 +470,7 @@ input {
     display: none;
   }
 
-  .modal__controls__button--exit-svg {
+  .modal__controls__button--exit-svg svg {
     @include icon-styles($size: $icon-size-medium, $padding: $padding-xxs, $border: 1px solid $border-color-light, $border-radius: 4px);
   }
 
