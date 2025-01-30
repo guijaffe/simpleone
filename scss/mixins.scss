@@ -1,0 +1,59 @@
+// Mixins
+@mixin flex-center($direction: row, $justify: flex-start, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin icon-styles(
+  $size: null,
+  $color: null,
+  $hover-color: $icon-blue,
+  $padding: null,
+  $border: null,
+  $border-radius: null
+) {
+  display: flex;
+
+  @if $size != null {
+    width: $size;
+    height: $size;
+  }
+
+  @if $padding != null {
+    padding: $padding;
+  }
+
+  @if $border != null {
+    border: $border;
+  }
+
+  @if $border-radius != null {
+    border-radius: $border-radius;
+  }
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, fill 0.3s ease;
+
+  &:hover {
+    border-color: $hover-color;
+    fill: $hover-color;
+  }
+}
+
+@mixin mini-icon-styles($size: $icon-size-small){
+  width: $size;
+  height: $size;
+  fill: $placeholder-color;
+  flex-shrink: 0;
+}
+
+@mixin border-styles($color: $border-color, $width: 1px, $side: null) {
+  @if $side {
+    border-#{$side}: $width solid $color;
+  } @else {
+    border: $width solid $color;
+  }
+}

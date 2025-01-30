@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>SimpleOne</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<svg class="header__sidebar-button sidebar__header-button open">
+					<use href="img/icons/icons.svg#sidebar"></use>
+				</svg>
+				<img class="header__logo-img" src="img/Logo.png" alt="Логотип SimpleOne">
+			</div>
+			<div class="header__actions">
+				<div class="header__search">
+					<label class="header__search-label">
+						<input class="header__search-input" type="search" placeholder="Поиск" aria-label="Поиск">
+					</label>
+				</div>
+
+				<div class="header__controls">
+					<div class="header__profile">
+						<img class="header__profile-avatar" src="img/Avatar.png" alt="Аватар Максима Галактионова">
+						<span class="header__profile-name">Максим Галактионов</span>
+					</div>
+
+					<button class="header__settings" aria-label="Настройки">
+						<svg class="header__settings-icon">
+							<use href="img/icons/icons.svg#settings"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<aside class="sidebar">
+			<div class="sidebar__icons">
+				<button class="sidebar__icon">
+					<svg class="sidebar__icon-svg sidebar__toggle-button open">
+						<use href="img/icons/icons.svg#sidebar"></use>
+					</svg>
+				</button>
+				<button class="sidebar__icon" id="addToFavorites" aria-label="Добавить страницу в избранное">
+					<svg class="sidebar__icon-svg">
+						<use href="img/icons/icons.svg#star"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="sidebar__controls">
+				<form class="sidebar__controls-search" action="#" method="get">
+					<input class="sidebar__controls-search-input" type="search" placeholder="Поиск по меню">
+					<svg>
+						<use href="img/icons/icons.svg#pinned"></use>
+					</svg>
+				</form>
+				<nav class="sidebar__controls-menu">
+					<ul class="menu-list sidebar__menu">
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="main__container">
+			<div class="main__controls controls">
+				<div class="main__controls__task">
+					<span class="main__controls__task-label">Подзадача</span>
+					<button class="main__controls__button main__controls__button--create btn btn-outline">Создать</button>
+				</div>
+
+				<div class="main__controls__actions">
+					<button class="main__controls__button main__controls__button--save btn btn-primary">Сохранить</button>
+					<button class="main__controls__button main__controls__button--save-exit btn btn-outline">Сохранить и выйти</button>
+				</div>
+			</div>
+			<div class="main__body">
+				<h1 class="main__title">STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller</h1>
+				<div class="main__content" id="contentToCopy">
+					<div class="main__content-item main__content-item_theme">
+						<label for="theme" class="main__content-label main__content-label_theme">Тема</label>
+						<input type="text" id="theme" class="main__content-input main__content-input_theme" value="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller">
+					</div>
+					<div class="main__content-item main__content-item_status">
+						<label for="status" class="main__content-label main__content-label_status">Статус</label>
+						<input type="text" id="status" class="main__content-input main__content-input_status" value="Новая">
+					</div>
+					<div class="main__content-item main__content-item_description">
+						<label for="description" class="main__content-label main__content-label_description">Описание</label>
+						<input type="text" id="description" class="main__content-input main__content-input_description">
+					</div>
+					<div class="main__content-item main__content-item_product">
+						<label for="product" class="main__content-label main__content-label_product">Продукт</label>
+						<input type="text" id="product" class="main__content-input main__content-input_product" value="Paltform">
+					</div>
+					<div class="main__content-item main__content-item_work">
+						<label for="work" class="main__content-label main__content-label_work">Рабочие заметки</label>
+						<input type="text" id="work" class="main__content-input main__content-input_work" value="Проверить ACL id=172830402014193655">
+					</div>
+					<div class="main__content-item main__content-item_priority">
+						<label for="priority" class="main__content-label main__content-label_priority">Приоритет</label>
+						<input type="text" id="priority" class="main__content-input main__content-input_priority" value="Средний">
+					</div>
+					<div class="main__content-item main__content-item_responsible">
+						<label for="responsible" class="main__content-label main__content-label_responsible">Ответственный</label>
+						<input type="text" id="responsible" class="main__content-input main__content-input_responsible">
+					</div>
+					<div class="main__content-item main__content-item_group">
+						<label for="group" class="main__content-label main__content-label_group">Группа</label>
+						<input type="text" id="group" class="main__content-input main__content-input_group">
+					</div>
+					<div class="main__content-item main__content-item_comments">
+						<label for="comments" class="main__content-label main__content-label_comments">Комментарии</label>
+						<input type="text" id="comments" class="main__content-input main__content-input_comments">
+					</div>
+					<div class="main__content-item main__content-item_agreements">
+						<label for="agreements" class="main__content-label main__content-label_comments">Согласующие</label>
+						<input type="text" id="agreements" class="main__content-input main__content-input_agreements">
+					</div>
+					<div class="main__content-item main__content-item_calendar-opened">
+						<label for="calendar-opened" class="main__content-label main__content-label_calendar-opened">Когда открыто</label>
+						<input type="date" id="calendar-opened" class="main__content-input main__content-input_calendar-opened">
+					</div>
+					<div class="main__content-item main__content-item_calendar-created">
+						<label for="calendar-created" class="main__content-label main__content-label_calendar-created">Когда создано</label>
+						<input type="date" id="calendar-created" class="main__content-input main__content-input_calendar-created">
+					</div>
+					<div class="main__content-item main__content-item_created-by">
+						<label for="created-by" class="main__content-label main__content-label_created-by">Кем создано</label>
+						<input type="text" id="created-by" class="main__content-input main__content-input_created-by">
+					</div>
+					<div class="main__content-item main__content-item_opened-by">
+						<label for="opened-by" class="main__content-label main__content-label_opened-by">Кем открыто</label>
+						<input type="text" id="opened-by" class="main__content-input main__content-input_opened-by">
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="modal" id="createModal">
+		<div class="modal__content">
+			<div class="modal__controls">
+				<div class="modal__controls__task">
+					<span class="modal__controls__task-label">Подзадача</span>
+					</div>
+				<div class="modal__controls__actions">
+					<button class="modal__controls__button modal__controls__button--save btn btn-primary">Сохранить</button>
+					<button class="modal__controls__button modal__controls__button--exit btn btn-outline">
+						<span>Отменить</span>
+					</button>
+					<button class="modal__controls__button--exit-svg btn btn-outline close">
+						<svg>
+							<use href="img/icons/icons.svg#X"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="modal__body">
+			</div>
+		</div>
+	</div>
+</body>
+</body>
+<script src="/js/index.js" defer></script>
+</html>
